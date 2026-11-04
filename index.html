@@ -221,33 +221,35 @@
       body{background:white;color:#111;font:11pt/1.4 Arial,sans-serif}
       html{scroll-padding-top:0}
       .container{width:100%;max-width:none}
-      .header,.hero-visual,.actions,.footer-actions,.video-frame,.text-link,.interest-tags,.visual-dots{display:none!important}
-      .hero{padding:10mm 0 5mm}
-      .hero-grid,.education-grid,.metrics,.job{display:block}
-      h1{font-size:29pt;letter-spacing:-1pt;margin:10px 0}
+      .header,.hero-visual,.actions,.footer,.video-frame,.text-link,.info-icon,.company-logo,.job-tags,.section-kicker,.section-intro{display:none!important}
+      .hero,.section,.experience,.interests{padding:3mm 0}
+      .hero-grid{display:block}
+      h1{font-size:27pt;letter-spacing:-1pt;margin:6px 0}
       h1 span{display:inline}
-      .hero-lead{max-width:none;font-size:11pt;margin:0 0 12px}
-      .section,.experience,.interests{padding:6mm 0}
-      h2{font-size:20pt;letter-spacing:0;margin-bottom:8px}
-      .section-heading{margin-bottom:12px}
-      .section-intro{max-width:none}
-      .metrics{display:grid;grid-template-columns:repeat(4,1fr)}
-      .metric{padding:10px;min-height:0;box-shadow:none;border:1px solid #ddd;break-inside:avoid}
-      .metric-number{font-size:19pt;margin:0 0 6px}
-      .job{margin:0 0 12px;padding:16px;box-shadow:none;break-inside:avoid;border:1px solid #ddd}
+      .hero-lead{max-width:none;font-size:10pt;margin:0 0 6px}
+      .hero-meta{margin-bottom:0}
+      .meta-pill{padding:3px 8px}
+      h2,.interests h2{font-size:16pt;letter-spacing:0}
+      .section-heading{margin-bottom:8px;break-after:avoid}
+      .metrics{grid-template-columns:repeat(4,1fr);gap:8px;break-inside:avoid}
+      .metric,.job,.info-card{padding:10px;box-shadow:none;break-inside:avoid;border:1px solid #ddd;border-radius:12px}
+      .metric{min-height:0}
+      .metric-number{font-size:16pt;margin:0 0 4px}
+      .metric-label{font-size:9pt}
+      .timeline,.education-grid{gap:8px}
+      .job{grid-template-columns:145px minmax(0,1fr);gap:12px;margin:0}
       .job:before,.timeline:before{display:none}
       .job-head{border:0;padding:0}
-      .job h3{font-size:16pt}
-      .job-year{margin-bottom:6px}
-      .video-section{margin-top:12px;padding-top:8px}
+      .job h3,.info-card h3{font-size:12pt;margin-bottom:4px}
+      .job-year,.job-company-note,.job-description,.points li,.info-card p{margin:0 0 4px}
+      .job-description,.points,.info-card p{font-size:10pt;line-height:1.4}
+      .video-section,.info-card .info-foot{margin-top:6px;padding-top:6px}
+      .video-heading{margin-bottom:0}
       .video-print-link{display:block;font-size:10pt}
-      .info-card{box-shadow:none;break-inside:avoid;padding:15px;margin-bottom:12px}
-      .info-icon{display:none}
-      .interests-inner{padding:12px;display:block;border:1px solid #ddd}
-      .footer{padding:12px 0;background:white;color:#111}
-      .footer-main{display:none}
-      .footer-bottom{border-top:1px solid #ddd;color:#333}
-      .footer-bottom a{color:#111}
+      .education-grid{grid-template-columns:1fr 1fr}
+      .interests-inner{padding:10px;display:block;border:1px solid #ddd;break-inside:avoid}
+      .interest-tags{justify-content:flex-start;gap:4px;margin-top:6px}
+      .interest-tags span{padding:3px 6px;font-size:9pt}
       @page{margin:14mm}
     }
   </style>
@@ -291,7 +293,7 @@
             <p>Общая выручка трёх полноценных коллекций одежды.</p>
           </div>
           <div class="visual-mini">
-            <div><strong>100 млн ₽</strong><span>Выручка под управлением в Дринкит</span></div>
+            <div><strong>100 млн ₽</strong><span>Годовая выручка самарской сети Дринкит</span></div>
             <span class="arrow" aria-hidden="true">↗</span>
           </div>
           <div class="visual-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
@@ -309,7 +311,7 @@
         </div>
         <div class="metrics">
           <div class="metric"><div class="metric-number">×5</div><div class="metric-label">Рост годовой выручки типографии «Богарт»: с 10 до 50 млн ₸</div></div>
-          <div class="metric"><div class="metric-number">5 городов</div><div class="metric-label">Тендеры, выигранные командой Дринкит за один месяц</div></div>
+          <div class="metric"><div class="metric-number">100 млн ₽</div><div class="metric-label">Годовая выручка самарской сети Дринкит</div></div>
           <div class="metric"><div class="metric-number">250 млн ₽</div><div class="metric-label">Портфель клиентов контрактного производства Yarmina</div></div>
           <div class="metric"><div class="metric-number">60 000</div><div class="metric-label">Гостей кафе «Люблю. Завтраки и кофе» за три года</div></div>
         </div>
@@ -352,7 +354,7 @@
               <ul class="points">
                 <li>Подготовил и выиграл с командой тендеры по 5 городам за 1 месяц.</li>
                 <li>В управлении 5 объектов: 4 кофейни и мануфактура.</li>
-                <li>Выручка под управлением — 100 млн ₽; показатель по чистой прибыли — 10 млн ₽.</li>
+                <li>Годовая выручка — 100 млн ₽. Показатель по чистой прибыли — 10 млн ₽.</li>
               </ul>
               <div class="job-tags"><span class="tag">Операционное управление</span><span class="tag">5 объектов</span><span class="tag">HoReCa</span></div>
             </div>
@@ -368,8 +370,8 @@
             <div class="job-body">
               <p class="job-description">Собственный бизнес в сегменте HoReCa — городское кафе с авторскими завтраками весь день.</p>
               <ul class="points">
-                <li>60 млн ₽ выручки за 3 года.</li>
-                <li>60 000 гостей.</li>
+                <li>75 млн ₽ выручки за 3 года.</li>
+                <li>60 000 гостей за 3 года.</li>
                 <li>10 человек в команде.</li>
               </ul>
               <div class="job-tags"><span class="tag">Предпринимательство</span><span class="tag">Городское кафе</span><span class="tag">Команда</span></div>
@@ -388,14 +390,14 @@
               <ul class="points">
                 <li>Выпустил 3 полноценные коллекции с общей выручкой 400 млн ₽.</li>
                 <li>Перестроил бизнес-модель: переход от собственной торговой марки к контрактному производству женской одежды.</li>
-                <li>Сформировал портфель клиентов контрактного производства на 250 млн ₽.</li>
+                <li>Сформировал портфель клиентов контрактного производства на 250 млн ₽.<br>12storeez, Алёна Ахмадуллина, Lime, Кира Пластинина, Ilovemum.</li>
                 <li>Реализовал 3 проекта производства СИЗ для Минздрава Москвы и Минпромторга РФ, включая проект в роли генерального субподрядчика Bocso в Рязанской области.</li>
               </ul>
               <div class="job-tags"><span class="tag">Fashion</span><span class="tag">Производство</span><span class="tag">Антикризисное управление</span></div>
               <div class="video-section">
-                <div class="video-heading"><strong>Фильм о производстве Yarmina</strong><a class="text-link" href="https://youtu.be/jdQxjGQKWpo" target="_blank" rel="noopener noreferrer">Открыть на YouTube ↗</a></div>
-                <div class="video-frame"><iframe title="Фильм о производстве Yarmina" src="https://www.youtube-nocookie.com/embed/jdQxjGQKWpo" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-                <p class="video-print-link">Видео: https://youtu.be/jdQxjGQKWpo</p>
+                <div class="video-heading"><strong>Фильм о контрактном производстве в Рязани</strong><a class="text-link" href="https://youtu.be/jdQxjGQKWpo" target="_blank" rel="noopener noreferrer">Открыть на YouTube ↗</a></div>
+                <div class="video-frame"><iframe title="Фильм о контрактном производстве в Рязани" src="https://www.youtube-nocookie.com/embed/jdQxjGQKWpo" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <a class="video-print-link" href="https://youtu.be/jdQxjGQKWpo">youtu.be/jdQxjGQKWpo</a>
               </div>
             </div>
           </article>
@@ -429,8 +431,7 @@
     <section class="section" id="education" aria-labelledby="education-heading">
       <div class="container">
         <div class="section-heading">
-          <div><div class="section-kicker">03 / База и инициативы</div><h2 id="education-heading">Образование и идеи.</h2></div>
-          <p class="section-intro">Системное мышление, логистика, практика управления и работа с сообществом.</p>
+          <div><div class="section-kicker">03 / База и инициативы</div><h2 id="education-heading">Образование</h2></div>
         </div>
         <div class="education-grid">
           <article class="info-card">
@@ -438,15 +439,16 @@
             <div class="small">Москва · 2014</div>
             <h3>Государственный университет управления</h3>
             <p><strong>Высшее экономическое образование.</strong> Специализация — логистика и управление цепями поставок.</p>
-            <p>Тема диплома: разработка модели логистической цепочки с расчётом и выбором оптимального размещения производств и распределительных центров по России.</p>
+            <p>Диплом — разработка модели логистической цепочки с расчётом и выбором оптимального размещения производств и распределительных центров по России.</p>
             <div class="info-foot"><strong>Средний балл:</strong> 4,8</div>
           </article>
           <article class="info-card">
             <div class="info-icon" aria-hidden="true">↗</div>
             <div class="small">С декабря 2012 года</div>
-            <h3>Создатель бизнес-клуба ГУУ</h3>
+            <h3>Основатель бизнес-клуба ГУУ</h3>
             <p>Некоммерческая инициатива, соединяющая современные методы обучения с кейсами реального рынка.</p>
             <p>Клуб организует экскурсии в компании и стажировки на ведущих предприятиях страны.</p>
+            <p>Мастер-классы и лекции от компаний<br>Яндекс, Русский уголь, Johnson&amp;Johnson, Nestle, МИФ и другие.</p>
             <div class="info-foot">Клуб продолжает работу и сменил уже <strong>6 поколений управления</strong>.</div>
           </article>
         </div>
@@ -456,8 +458,8 @@
     <section class="interests" id="interests" aria-labelledby="interests-heading">
       <div class="container">
         <div class="interests-inner">
-          <div><div class="section-kicker">04 / Вне работы</div><h2 id="interests-heading">Движение и любопытство.</h2><p>То, что вдохновляет за пределами проектов.</p></div>
-          <div class="interest-tags" aria-label="Интересы"><span>Бег</span><span>Футбол</span><span>Печатные книги</span><span>Путешествия</span></div>
+          <div><div class="section-kicker">04 / Вне работы</div><h2 id="interests-heading">Развитие и открытость новому</h2><p>То, что вдохновляет за пределами проектов.</p></div>
+          <div class="interest-tags" aria-label="Интересы"><span>Бег</span><span>Футбол</span><span>Печатные книги</span><span>Путешествия</span><span>Технологии</span><span>Новые бизнес-ниши</span></div>
         </div>
       </div>
     </section>
