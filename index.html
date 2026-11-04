@@ -99,6 +99,9 @@
     .job.featured{border-color:var(--orange-line)}
     .job-year{font-size:12px;font-weight:850;letter-spacing:.2px;color:#817670;margin-bottom:13px}
     .job h3{font-size:23px;line-height:1.18;letter-spacing:-.8px;margin:0 0 9px;font-weight:900}
+    .job-company{display:flex;align-items:center;gap:10px}
+    .company-logo{display:block;flex:none;width:46px;height:46px;object-fit:contain;border:1px solid var(--line);border-radius:12px;background:#fff}
+    .company-logo--print{padding:10px;background:var(--orange-wash);color:var(--orange-dark)}
     .job-company-note{font-size:12px;color:#a17d64;font-weight:750;margin:8px 0}
     .job-title{font-size:14px;color:var(--orange-dark);font-weight:850}
     .job-description{color:#625954;font-size:14px;line-height:1.75;margin-bottom:15px}
@@ -310,7 +313,7 @@
           <article class="job featured">
             <div class="job-head">
               <div class="job-year">01.2026 — настоящее время</div>
-              <h3>Додо Пицца</h3>
+              <h3 class="job-company"><img class="company-logo" src="./assets/companies/dodo-pizza.png" alt="" width="46" height="46">Додо Пицца</h3>
               <div class="job-company-note">Самарская сеть</div>
               <div class="job-title">Коммерческий директор</div>
             </div>
@@ -327,7 +330,7 @@
           <article class="job featured">
             <div class="job-head">
               <div class="job-year">11.2024 — настоящее время</div>
-              <h3>Дринкит</h3>
+              <h3 class="job-company"><img class="company-logo" src="./assets/companies/drinkit.png" alt="" width="46" height="46">Дринкит</h3>
               <div class="job-company-note">Самарская сеть</div>
               <div class="job-title">Операционный директор</div>
             </div>
@@ -345,7 +348,7 @@
           <article class="job">
             <div class="job-head">
               <div class="job-year">06.2023 — настоящее время</div>
-              <h3>Люблю. Завтраки и кофе</h3>
+              <h3 class="job-company"><img class="company-logo" src="./assets/companies/lyublyu.jpg" alt="" width="46" height="46"><span>Люблю.<br> Завтраки и кофе</span></h3>
               <div class="job-company-note">Самара</div>
               <div class="job-title">Основатель · индивидуальный предприниматель</div>
             </div>
@@ -363,7 +366,7 @@
           <article class="job" id="yarmina">
             <div class="job-head">
               <div class="job-year">11.2017 — 11.2020</div>
-              <h3>Yarmina</h3>
+              <h3 class="job-company"><img class="company-logo" src="./assets/companies/yarmina.png" alt="" width="46" height="46">Yarmina</h3>
               <div class="job-company-note">Бренд женской одежды · Москва</div>
               <div class="job-title">Исполнительный директор</div>
             </div>
@@ -387,7 +390,12 @@
           <article class="job">
             <div class="job-head">
               <div class="job-year">07.2015 — 11.2017</div>
-              <h3>Богарт</h3>
+              <h3 class="job-company">
+                <svg class="company-logo company-logo--print" viewBox="0 0 24 24" width="46" height="46" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6zM6 12h.01"/>
+                </svg>
+                Богарт
+              </h3>
               <div class="job-company-note">Типография полного цикла · Казахстан</div>
               <div class="job-title">Директор по развитию</div>
             </div>
